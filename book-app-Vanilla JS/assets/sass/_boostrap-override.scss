@@ -1,0 +1,10 @@
+/* Importo sempre prima le funzioni e le variabili di Bootstrap */
+
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+
+/* Importo tutti gli altri partial di Bootstap che mi potrebbero servire... (mixins, variabili, funzioni ecc.) */
+
+/* Importo Bootstrap sempre alla fine */
+
+@import '../../node_modules/bootstrap/scss/bootstrap';

@@ -1,0 +1,159 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(90deg,
+      rgb(63, 86, 119) 0%,
+      rgba(33, 44, 61, 1) 42%,
+      rgb(15, 21, 29) 100%) !important;
+}
+
+/*SIDEBAR SECTION*/
+.navbar.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 230px;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a {
+  color: rgb(145, 145, 145) !important;
+  transition: 0.3s;
+}
+
+.navbar.fixed-left .navbar-collapse .navbar-nav a:hover {
+  color: white !important;
+}
+
+.navbar.fixed-left .navbar-brand {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav-btn {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.nav-btn a {
+  color: rgb(145, 145, 145);
+}
+
+.signup-btn {
+  background-color: white;
+  color: black;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+}
+
+.signup-btn:hover {
+  color: white;
+  background-color: rgb(60, 211, 60);
+  border: 1px solid rgb(60, 211, 60);
+}
+
+.login-btn {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 0.5rem;
+}
+
+.login-btn:hover {
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 936px) {
+  #sidebar {
+    display: none;
+  }
+}
+
+.brown {
+  border: 2px solid brown
+}
+
+.green {
+  border: 2px solid green;
+}
+
+.yellow {
+  border: 2px solid yellow;
+}
+
+.blue {
+  border: 2px solid blue;
+}
+
+/* MAIN NAV */
+
+.mainNav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-nav-link {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0.3;
+  transition: opacity 0.3s;
+}
+
+.main-nav-link:hover {
+  opacity: 1;
+}
+
+/* CARDS */
+
+/* CardsRowTitle */
+
+.titolo-cards {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.mb-large {
+  margin-bottom: 5rem !important;
+}
+
+/*SingleCard */
+
+.card-link {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.card-link:hover {
+  opacity: 0.3;
+}
+
+/* MediaPlayer */
+
+.playerControls a img {
+  width: 14px;
+  margin-top: 1rem;
+  filter: brightness(60%);
+}

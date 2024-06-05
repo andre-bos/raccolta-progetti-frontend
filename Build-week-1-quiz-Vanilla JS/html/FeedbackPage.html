@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="../css/styleFeedback.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">/*Link sito per stelle*/</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!----HEADER-->
+    <header>
+        <a href= "welcome.html"><img src="../assets/epicode_logo.png" alt="Epicode logo" /></a>
+    </header>
+
+    <!----MAIN-->
+        <main>
+            <div>
+                <h1> Tell us how it's going</h1>
+                <p> From 0 to 10, how likely are you to recommend EPICODE to a friend or a colleague?</p>
+                <ul class="list-inline rating-list">
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star azure"></i></li>
+                    <li><i class="fa fa-star gray"></i></li>
+                    <li><i class="fa fa-star gray"></i></li>
+                    <li><i class="fa fa-star gray"></i></li>
+                    <li><i class="fa fa-star gray"></i></li>
+                </ul>
+            </div>
+            <section>
+                <p> Leave us an open feedback about your experience so far</p>
+                <textarea name="commento" placeholder="Write your comment here"></textarea>
+            </section>
+            <div id="FeedbackInviato"></div>
+            <div>
+                <button  onmouseover="GlowingButton()" onclick="SendFeedback()">Send us your feedback</button>
+            </div>
+            
+            <div>
+                <button onclick="LinkHomeEpicode()" onmouseover="GlowingButton()">MORE INFO</button>
+            </div>
+        </main>
+    </div>
+    <!----COLLEGAMENTO JS-->
+    <script src="../js/Feedback.js"></script>
+</body>
+</html>
